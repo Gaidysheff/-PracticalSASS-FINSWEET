@@ -1,9 +1,126 @@
 @use "../node_modules/sass-rem" as to;
 
+@import "./sass/fonts.scss";
 @import "./sass/variables";
 @import "./sass/mixins";
 
-h1 {
-  color: red;
-  font-size: 16px;
+// ------------- fonts set up --------------
+
+html,
+body {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-size: to.rem(16px);
+  font-weight: 600;
+  line-height: 1.75;
+  color: rgba(30, 27, 27, 1);
+}
+
+.heading01 {
+  font-weight: 600;
+  font-size: to.rem(64px);
+  line-height: 1.31;
+  letter-spacing: -0.015em;
+}
+
+.heading02 {
+  font-weight: 800;
+  font-size: to.rem(58px);
+  line-height: to.rem(76px);
+  letter-spacing: -2px;
+}
+
+.heading03 {
+  font-weight: 700;
+  font-size: to.rem(48px);
+  line-height: 140%;
+  letter-spacing: -0.03em;
+  color: rgba(255, 255, 255, 1);
+}
+
+.body01 {
+  font-weight: 600;
+  font-size: to.rem(18px);
+  line-height: 1.75;
+}
+
+.body02 {
+  font-weight: 600;
+  font-size: to.rem(16px);
+  line-height: 1.75;
+}
+
+.caption {
+  font-weight: 500;
+  font-size: to.rem(16px);
+  line-height: 1.5;
+  opacity: 0.7;
+}
+
+.title01 {
+  font-weight: 700;
+  font-size: to.rem(32px);
+  line-height: 1.5;
+  letter-spacing: -2px;
+}
+
+.title02 {
+  font-weight: 600;
+  font-size: to.rem(24px);
+  line-height: 1.5;
+  letter-spacing: -2px;
+}
+
+//! ---------------------------------------------
+//! ----------- GLOBAL CLASSES ------------------
+//! ---------------------------------------------
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: to.rem(1320px);
+  padding: to.rem(0px 20px);
+  margin: 0px auto;
+  height: 100%;
+}
+
+//! ---------------------------------------------
+//! --------------- HEADER ----------------------
+//! ---------------------------------------------
+
+.header {
+}
+
+.header__top {
+}
+
+.header__top-inner {
+}
+
+.header__logo {
+}
+
+.header__nav {
+}
+
+.header__nav-list {
+}
+
+.header__nav-item {
+}
+
+.header__nav-link {
+}
+
+.header__box {
+}
+
+.header__box-assistance {
+}
+
+.header__box-phone {
 }
