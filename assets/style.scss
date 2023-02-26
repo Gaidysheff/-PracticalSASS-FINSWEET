@@ -1,4 +1,4 @@
-@use "../node_modules/sass-rem" as to;
+@use "../node_modules/sass-rem/" as to;
 
 @import "./sass/fonts.scss";
 @import "./sass/variables";
@@ -201,7 +201,7 @@ body {
     width: to.rem(302px);
     height: to.rem(126px);
     border-radius: 59px;
-    top: 28.2%;
+    top: 19.8%;
     left: 49.7%;
     justify-content: center;
     align-items: center;
@@ -226,9 +226,9 @@ body {
       height: 70px;
       display: block;
       position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 77;
+      top: 50%;
+      left: -9%;
+      transform: translate(-100%, -50%);
     }
   }
 }
