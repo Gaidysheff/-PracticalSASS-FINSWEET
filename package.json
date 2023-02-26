@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Gaidysheff/-PracticalSASS-FINSWEET/issues"
   },
-  "homepage": "https://github.com/Gaidysheff/-PracticalSASS-FINSWEET#readme"
+  "homepage": "https://github.com/Gaidysheff/-PracticalSASS-FINSWEET#readme",
+  "dependencies": {
+    "sass-rem": "^3.0.0"
+  }
 }

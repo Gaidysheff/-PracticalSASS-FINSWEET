@@ -1,0 +1,9 @@
+@use "../node_modules/sass-rem" as to;
+
+@import "./sass/variables";
+@import "./sass/mixins";
+
+h1 {
+  color: red;
+  font-size: 16px;
+}
