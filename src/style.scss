@@ -88,39 +88,163 @@ body {
   height: 100%;
 }
 
-//! ---------------------------------------------
-//! --------------- HEADER ----------------------
-//! ---------------------------------------------
+/*! =================== HEADER TOP ================== */
+/*! =================== HEADER TOP ================== */
 
 .header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .header__top {
 }
 
 .header__top-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px 0;
 }
 
 .header__logo {
 }
 
 .header__nav {
+  margin-left: auto;
 }
 
 .header__nav-list {
+  display: flex;
 }
 
 .header__nav-item {
+  margin-right: 40px;
+
+  &:last-child {
+    margin: 0px;
+  }
 }
 
 .header__nav-link {
 }
 
 .header__box {
+  width: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-left: 54px;
+  position: relative;
+  &::before {
+    content: "";
+    background: url("../images/section-01/assistance-icon.svg");
+    width: 41px;
+    height: 41px;
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 27px;
+  }
+}
+
+.header__top-inner > span {
+  background: rgba(147, 145, 145, 1);
+  height: 42px;
+  width: 1px;
+  margin-left: 32px;
+  margin-top: -3px;
 }
 
 .header__box-assistance {
+  letter-spacing: 0.5px;
 }
 
 .header__box-phone {
+}
+
+.header__box-phone::before {
+}
+
+/*! =================== HEADER BODY ================== */
+/*! =================== HEADER BODY ================== */
+
+.header__body {
+  flex-grow: 1;
+}
+
+.header__body-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.header__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  margin: auto 0;
+}
+.header__image {
+  > img {
+    margin-top: 75px;
+  }
+
+  .header__left-badge {
+    display: flex;
+    position: absolute;
+    width: to.rem(302px);
+    height: to.rem(126px);
+    border-radius: 59px;
+    top: 28.2%;
+    left: 49.7%;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    background-clip: padding-box;
+    border: 12px solid rgba(225, 225, 225, 0.43);
+    box-shadow: 0px 28px 118px rgba(109, 108, 115, 0.12);
+    border-radius: 59px;
+  }
+
+  .header__quick-service {
+    margin-left: 57px;
+    font-weight: 600;
+    font-size: to.rem(24px);
+    line-height: to.rem(36px);
+    letter-spacing: -1px;
+    position: relative;
+    &::before {
+      content: "";
+      background: url("../images/section-01/24hr-icon.svg");
+      width: 70px;
+      height: 70px;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 77;
+    }
+  }
+}
+
+.header__row1 {
+  display: inline-flex;
+}
+.header__button {
+}
+.header__video {
+}
+.header__row2 {
+  display: flex;
+  flex-direction: column;
+}
+.header__open {
+}
+.header__schedule {
 }
