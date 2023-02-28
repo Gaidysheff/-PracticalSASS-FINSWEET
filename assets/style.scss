@@ -275,7 +275,7 @@ body {
     width: to.rem(302px);
     height: to.rem(126px);
     border-radius: 59px;
-    top: 20.1%;
+    top: 19.9%;
     left: 49.7%;
     justify-content: center;
     align-items: center;
@@ -288,6 +288,7 @@ body {
 
   .header__quick-service {
     margin-left: 57px;
+    margin-top: -5px;
     font-weight: 600;
     font-size: to.rem(24px);
     line-height: to.rem(36px);
@@ -300,7 +301,7 @@ body {
       height: 70px;
       display: block;
       position: absolute;
-      top: 50%;
+      top: 49.5%;
       left: -9%;
       transform: translate(-100%, -50%);
     }
@@ -363,14 +364,16 @@ body {
     flex-direction: column;
     text-align: center;
     padding-top: 130px;
-    padding-bottom: 159px;
+    padding-bottom: 129px;
   }
 
   &__header {
   }
 
   &__title {
-    letter-spacing: 0.1px;
+    letter-spacing: 1px;
+    padding-left: 10px;
+    margin-top: -1px;
   }
 
   &__heading {
@@ -385,31 +388,217 @@ body {
     padding-top: 65px;
   }
 
-  &__col {
-    background-color: white;
-    height: 232px;
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    padding-bottom: 25px;
-    &:nth-child(4) {
-      padding-bottom: 60px;
+  // ------------- OFFER Box#1 --------------
+  &__col-1 {
+    @include cols();
+
+    &::after {
+      content: "";
+      background: url("../images/section-02/2-1.svg");
+      width: 45px;
+      height: 49px;
+      @include cols-after();
     }
 
-    .title02 {
-      letter-spacing: -0.03em;
+    &:hover {
+      @include cols-hover();
+      &::after {
+        content: "";
+        background: url("../images/section-02/2-1w.svg");
+        width: 45px;
+        height: 49px;
+        @include cols-after();
+      }
+    }
+  }
+  // ------------- OFFER Box#2 --------------
+  &__col-2 {
+    @include cols();
+
+    &::after {
+      content: "";
+      background: url("../images/section-02/2-2.svg");
+      width: 43px;
+      height: 43px;
+      @include cols-after();
     }
 
-    // a {
-    //   width: 314px;
-    //   height: 232px;
-    // }
+    &:hover {
+      @include cols-hover();
+      &::after {
+        content: "";
+        background: url("../images/section-02/2-2w.svg");
+        width: 43px;
+        height: 43px;
+        @include cols-after();
+      }
+    }
   }
 
-  // .offer__link
+  // ------------- OFFER Box#3 --------------
+  &__col-3 {
+    @include cols();
 
-  &__link {
-    text-align: right;
-    padding: 32px 59px 0px 0px;
+    &::after {
+      content: "";
+      background: url("../images/section-02/2-3.svg");
+      width: 47px;
+      height: 46px;
+      @include cols-after();
+    }
+
+    &:hover {
+      @include cols-hover();
+      &::after {
+        content: "";
+        background: url("../images/section-02/2-3w.svg");
+        width: 47px;
+        height: 46px;
+        @include cols-after();
+      }
+    }
+  }
+  // ------------- OFFER Box#4 --------------
+  &__col-4 {
+    @include cols();
+    padding-bottom: 60px;
+
+    &::after {
+      content: "";
+      background: url("../images/section-02/2-4.svg");
+      width: 33px;
+      height: 46px;
+      @include cols-after();
+    }
+
+    &:hover {
+      @include cols-hover();
+      &::after {
+        content: "";
+        background: url("../images/section-02/2-4w.svg");
+        width: 33px;
+        height: 46px;
+        @include cols-after();
+      }
+    }
+  }
+  // ------------- OFFER Box#5 --------------
+  &__col-5 {
+    @include cols();
+
+    &::after {
+      content: "";
+      background: url("../images/section-02/2-5.svg");
+      width: 55px;
+      height: 39px;
+      @include cols-after();
+    }
+
+    &:hover {
+      @include cols-hover();
+      &::after {
+        content: "";
+        background: url("../images/section-02/2-5w.svg");
+        width: 55px;
+        height: 39px;
+        @include cols-after();
+      }
+    }
+  }
+  // ------------- OFFER Box#6 --------------
+  &__col-6 {
+    @include cols();
+
+    &::after {
+      content: "";
+      background: url("../images/section-02/2-6.svg");
+      width: 45px;
+      height: 39px;
+      @include cols-after();
+    }
+
+    &:hover {
+      @include cols-hover();
+      &::after {
+        content: "";
+        background: url("../images/section-02/2-6w.svg");
+        width: 45px;
+        height: 39px;
+        @include cols-after();
+      }
+    }
+  }
+  // ------------- OFFER Box#7 --------------
+  &__col-7 {
+    @include cols();
+
+    &::after {
+      content: "";
+      background: url("../images/section-02/2-7.svg");
+      width: 37px;
+      height: 47px;
+      @include cols-after();
+    }
+
+    &:hover {
+      @include cols-hover();
+      &::after {
+        content: "";
+        background: url("../images/section-02/2-7w.svg");
+        width: 37px;
+        height: 47px;
+        @include cols-after();
+      }
+    }
+  }
+  // ------------- OFFER Box#8 --------------
+  &__col-8 {
+    @include cols();
+
+    &::after {
+      content: "";
+      background: url("../images/section-02/2-8.svg");
+      width: 47px;
+      height: 47px;
+      @include cols-after();
+    }
+
+    &:hover {
+      @include cols-hover();
+      &::after {
+        content: "";
+        background: url("../images/section-02/2-8w.svg");
+        width: 47px;
+        height: 47px;
+        @include cols-after();
+      }
+    }
+  }
+
+  .title02 {
+    letter-spacing: -0.03em;
+  }
+
+  &__more {
+    align-self: end;
+    margin: 32px 60px 0 0;
+    white-space: nowrap;
+    position: relative;
+
+    &:hover {
+      transform: scale(1.05);
+      color: #ff6433;
+    }
+
+    span {
+      content: "";
+      background: url("../images/section-02/arrow-icon.svg");
+      width: 54px;
+      height: 16px;
+      display: block;
+      position: absolute;
+      top: 25%;
+      left: 109%;
+    }
   }
 }

@@ -1,0 +1,27 @@
+// ---------- Mixins for Section OFFER ----------
+@mixin cols {
+  background-color: white;
+  height: 232px;
+  display: flex;
+  position: relative;
+  align-items: end;
+  justify-content: center;
+  padding-bottom: 25px;
+  transition: all 0.5s;
+}
+
+@mixin cols-after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  transition: all 0.5s;
+}
+
+@mixin cols-hover {
+  background-color: #ff6433;
+  color: white;
+}
+
+// ------------------------------------------------
