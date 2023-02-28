@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/Gaidysheff/-PracticalSASS-FINSWEET#readme",
   "dependencies": {
+    "@fancyapps/ui": "^5.0.3",
+    "jquery": "^3.6.3",
+    "rateyo": "^3.0.0-alpha.2",
     "sass-rem": "^3.0.0"
   }
 }
