@@ -581,24 +581,34 @@ body {
 
   &__more {
     align-self: end;
-    margin: 32px 60px 0 0;
+    margin-top: 32px;
+    margin: 33px -7px 0px 0px;
     white-space: nowrap;
     position: relative;
+
+    span {
+      margin-right: 8px;
+    }
 
     &:hover {
       transform: scale(1.05);
       color: #ff6433;
     }
 
-    span {
-      content: "";
-      background: url("../images/section-02/arrow-icon.svg");
-      width: 54px;
-      height: 16px;
-      display: block;
-      position: absolute;
-      top: 25%;
-      left: 109%;
+    &:hover path {
+      transform: scale(1.05);
+      fill: #ff6433;
     }
+
+    // span {
+    //   content: "";
+    //   background: url("../images/section-02/arrow-icon.svg");
+    //   width: 54px;
+    //   height: 16px;
+    //   display: block;
+    //   position: absolute;
+    //   top: 25%;
+    //   left: 109%;
+    // }
   }
 }
