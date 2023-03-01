@@ -353,8 +353,8 @@ body {
   }
 }
 
-/*! =================== OFFER ================== */
-/*! =================== OFFER ================== */
+/*! =================== SECTION OFFER ================== */
+/*! =================== SECTION OFFER ================== */
 
 .offer {
   background-color: #f2f2f2;
@@ -596,19 +596,74 @@ body {
     }
 
     &:hover path {
-      transform: scale(1.05);
+      transform: scale(1.02);
       fill: #ff6433;
     }
-
-    // span {
-    //   content: "";
-    //   background: url("../images/section-02/arrow-icon.svg");
-    //   width: 54px;
-    //   height: 16px;
-    //   display: block;
-    //   position: absolute;
-    //   top: 25%;
-    //   left: 109%;
-    // }
   }
 }
+
+/*! =================== SECTION HELP ================== */
+/*! =================== SECTION HELP ================== */
+
+.help {
+  padding: 133px 0 265px 0;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  &__left-side {
+    .heading02 {
+      letter-spacing: -5.5px;
+    }
+
+    .body02 {
+      letter-spacing: -0.2px;
+    }
+
+    p {
+      padding-top: 18px;
+    }
+
+    .btn {
+      margin-top: 32px;
+      @include button02();
+    }
+  }
+
+  &__right-side {
+    padding: 16px 0px 0px 110px;
+    position: relative;
+
+    &::before {
+      content: "";
+      background: url("../images/section-03/Group\ 9128.svg");
+      display: block;
+      width: 72px;
+      height: 434px;
+      position: absolute;
+      top: 0;
+      left: 2%;
+    }
+
+    li:not(:first-child) {
+      padding-top: 30px;
+    }
+
+    p {
+      padding-top: 8px;
+      padding-right: 200px;
+    }
+
+    .title01 {
+      letter-spacing: -1px;
+    }
+    .body01 {
+      letter-spacing: -0.1px;
+    }
+  }
+}
+
+/*! =================== SECTION CONTACT ================== */
+/*! =================== SECTION CONTACT ================== */
