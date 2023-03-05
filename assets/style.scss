@@ -88,6 +88,19 @@ body {
   height: 100%;
 }
 
+// --- button Longer-Orange ---
+.btn1 {
+  @include button01();
+}
+// --- button Shorter-Orange ---
+.btn2 {
+  @include button02();
+}
+// --- button Shorter-Black ---
+.btn3 {
+  @include button03();
+}
+
 /*! =================== HEADER TOP ================== */
 /*! =================== HEADER TOP ================== */
 
@@ -204,26 +217,6 @@ body {
 
     .header__button {
       margin-top: 10px;
-    }
-
-    .btn {
-      display: inline-block;
-      width: 201px;
-      height: 62px;
-      font-size: 18px;
-      letter-spacing: -0.4px;
-      line-height: 1.75;
-      font-weight: 600;
-      padding: 17px 0 0 40px;
-      color: #ffffff;
-      background: #ff6433;
-      border-radius: 12px;
-      white-space: nowrap;
-      transition: 0.5s;
-
-      &:hover {
-        transform: scale(1.05);
-      }
     }
 
     .header__video {
@@ -607,7 +600,7 @@ body {
 /*! =================== SECTION HELP ================== */
 
 .help {
-  padding: 133px 0 265px 0;
+  padding: 133px 0 135px 0;
 
   &__inner {
     display: grid;
@@ -626,11 +619,10 @@ body {
     p {
       padding-top: 18px;
     }
+  }
 
-    .btn {
-      margin-top: 32px;
-      @include button02();
-    }
+  &__button {
+    margin-top: 32px;
   }
 
   &__right-side {
@@ -666,5 +658,167 @@ body {
   }
 }
 
-/*! =================== SECTION CONTACT ================== */
-/*! =================== SECTION CONTACT ================== */
+/*! =================== SECTION QUERY ================== */
+/*! =================== SECTION QUERY ================== */
+
+.query {
+  margin-bottom: 50px;
+  &__inner {
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 16.73% 37.32% 45.95%;
+    column-gap: 0px;
+    margin-right: -15px;
+  }
+
+  img {
+    max-height: 502px;
+  }
+
+  .middle {
+    background-color: #ff6433;
+    margin-left: -6px;
+    padding-top: 130px;
+  }
+
+  &__heading {
+    margin-left: 80px;
+    letter-spacing: -1px;
+    padding-right: 30px;
+  }
+
+  &__button {
+    margin-top: 45px;
+    margin-left: 62px;
+  }
+
+  &__values {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__value {
+    margin-left: -6px;
+    margin-top: 50px;
+  }
+
+  &__quantity {
+    color: rgba(102, 28, 231, 1);
+  }
+
+  .heading02 {
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .title02 {
+    letter-spacing: -0.5px;
+  }
+}
+
+/*! =================== SECTION BRANDS ================== */
+/*! =================== SECTION BRANDS ================== */
+
+.brands {
+  background-color: #e2e6e9;
+  padding-top: 124px;
+  padding-bottom: 80px;
+  // padding-bottom: 100px;
+
+  &__heading {
+    text-align: center;
+  }
+
+  // .brands__logos-ul
+
+  &__logos-ul {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(5, 1fr);
+    margin-top: 35px;
+    gap: 40px 40px;
+  }
+
+  // .brands__logo
+
+  &__logo {
+    height: 127.88px;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/*! =================== SECTION BLOG ================== */
+/*! =================== SECTION BLOG ================== */
+
+.blog {
+  padding: 128px 0 133px 0;
+
+  &__title {
+    letter-spacing: -5px;
+    margin-left: -3px;
+    margin-bottom: 55px;
+  }
+
+  &__filter-box {
+    margin-bottom: 50px;
+  }
+
+  &__filter-item {
+    display: inline-flex;
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__filter-btn {
+    background-color: transparent;
+    color: #9a9ca5;
+    border: 1px solid #9a9ca5;
+    border-radius: 4px;
+    padding: 1px 8px;
+    white-space: nowrap;
+
+    &--active {
+      background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+      border: none;
+      color: #fff;
+      padding: 2px 8px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template: repeat(2, auto) / repeat(3, 1fr);
+    gap: 62px 30px;
+  }
+
+  &__list-item {
+    overflow: hidden;
+  }
+
+  &__image-box {
+    margin-bottom: 25px;
+  }
+
+  .body02 {
+    color: #939191;
+  }
+
+  &__article-title {
+    margin: 16px 0;
+    letter-spacing: -1px;
+  }
+
+  &__article-text {
+    letter-spacing: -0.2px;
+  }
+}
+
+/*! =================== SECTION CUSTOMERS ================== */
+/*! =================== SECTION CUSTOMERS ================== */
