@@ -33,4 +33,26 @@ $(function () {
     e.preventDefault();
     $(".customers__slider").slick("slickNext");
   });
+
+  // --------------------- FAQ Аккордион ----------------------
+  // ------- многооконный --------------
+  // $(".faq__accordeon-link").on("click", function (e) {
+  //   e.preventDefault();
+  //   $(this).toggleClass("faq__accordeon-link--active");
+  //   $(this).children(".faq__accordeon-text").slideToggle();
+  // });
+
+  // ------- однооконный --------------
+  $(".faq__accordeon-link").on("click", function (e) {
+    e.preventDefault();
+    if ($(this).hasClass("faq__accordeon-link--active")) {
+      $(this).removeClass("faq__accordeon-link--active");
+      $(this).children(".faq__accordeon-text").slideUp();
+    } else {
+      $(".faq__accordeon-link").removeClass("faq__accordeon-link--active");
+      $(".faq__accordeon-text").slideUp();
+      $(this).addClass("faq__accordeon-link--active");
+      $(this).children(".faq__accordeon-text").slideDown();
+    }
+  });
 });

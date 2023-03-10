@@ -105,7 +105,7 @@ body {
 /*! =================== HEADER TOP ================== */
 
 .header {
-  height: 937px;
+  height: to.rem(937px);
   display: flex;
   flex-direction: column;
 }
@@ -117,7 +117,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 19px 0;
+  padding: to.rem(19px 0);
 }
 
 .header__logo {
@@ -132,10 +132,10 @@ body {
 }
 
 .header__nav-item {
-  margin-right: 40px;
+  margin-right: to.rem(40px);
 
   &:last-child {
-    margin: 0px;
+    margin: 0;
   }
 }
 
@@ -143,40 +143,40 @@ body {
 }
 
 .header__box {
-  width: 210px;
+  width: to.rem(210px);
   display: flex;
   flex-direction: column;
   align-items: end;
-  padding-left: 54px;
-  margin-left: 3px;
+  padding-left: to.rem(54px);
+  margin-left: to.rem(3px);
   position: relative;
   &::before {
     content: "";
     background: url("../images/section-01/assistance-icon.svg");
-    width: 40px;
-    height: 40px;
+    width: to.rem(40px);
+    height: to.rem(40px);
     display: block;
     position: absolute;
-    top: 7px;
-    left: 27px;
+    top: to.rem(7px);
+    left: to.rem(27px);
   }
 }
 
 .header__top-inner > span {
   background: rgba(147, 145, 145, 1);
-  height: 42px;
-  width: 1px;
-  margin-left: 37px;
-  margin-top: -3px;
+  height: to.rem(42px);
+  width: to.rem(1px);
+  margin-left: to.rem(37px);
+  margin-top: to.rem(-3px);
 }
 
 .header__box-assistance {
-  letter-spacing: 0.7px;
+  letter-spacing: to.rem(0.7px);
   justify-content: end;
 }
 
 .header__box-phone {
-  letter-spacing: 0.5px;
+  letter-spacing: to.rem(0.5px);
 }
 
 .header__box-phone::before {
@@ -206,53 +206,48 @@ body {
   flex-direction: column;
 
   .header__row1 {
-    margin-top: 162px;
-    letter-spacing: -1.1px;
+    margin-top: to.rem(162px);
+    letter-spacing: to.rem(-1.1px);
   }
 
   .header__row2 {
     display: inline-flex;
-    margin-top: 20px;
+    margin-top: to.rem(20px);
     align-items: center;
 
     .header__button {
-      margin-top: 10px;
+      margin-top: to.rem(10px);
     }
 
     .header__video {
       display: inline-flex;
       align-items: center;
-      margin-top: 10px;
-      padding-left: 50px;
-      letter-spacing: -0.4px;
+      margin-top: to.rem(10px);
+      padding-left: to.rem(50px);
+      letter-spacing: to.rem(-0.4px);
     }
 
     svg {
-      margin-right: 9px;
+      margin-right: to.rem(9px);
     }
   }
 
   .header__row3 {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
-    padding-left: 45px;
+    margin-top: to.rem(50px);
+    padding-left: to.rem(45px);
     position: relative;
     &::before {
       content: "";
       background: url("../images/section-01/open-icon.svg");
-      width: 31px;
-      height: 31px;
+      width: to.rem(31px);
+      height: to.rem(31px);
       display: block;
       position: absolute;
       top: 20%;
       left: 0%;
       // transform: translate(50%, 50%);
-    }
-
-    .header__open {
-    }
-    .header__schedule {
     }
   }
 }
@@ -261,7 +256,7 @@ body {
   position: relative;
 
   > img {
-    margin-top: 76px;
+    margin-top: to.rem(76px);
   }
 
   .header__left-badge {
@@ -269,16 +264,16 @@ body {
     position: absolute;
     width: to.rem(302px);
     height: to.rem(126px);
-    border-radius: 59px;
+    border-radius: to.rem(59px);
     top: 20.4%;
     left: -6.9%;
     justify-content: center;
     align-items: center;
     background: #ffffff;
     background-clip: padding-box;
-    border: 12px solid rgba(225, 225, 225, 0.43);
-    box-shadow: 0px 28px 118px rgba(109, 108, 115, 0.12);
-    border-radius: 59px;
+    border: to.rem(12px) solid rgba(225, 225, 225, 0.43);
+    box-shadow: to.rem(0px 28px 118px rgba(109, 108, 115, 0.12));
+    border-radius: to.rem(59px);
   }
 
   .header__quick-service {
@@ -310,9 +305,9 @@ body {
     left: 47.8%;
     background: #ffffff;
     background-clip: padding-box;
-    border: 12px solid rgba(225, 225, 225, 0.43);
-    box-shadow: 0px 28px 118px rgba(109, 108, 115, 0.12);
-    border-radius: 62px;
+    border: to.rem(12px solid rgba(225, 225, 225, 0.43));
+    box-shadow: to.rem(0px 28px 118px rgba(109, 108, 115, 0.12));
+    border-radius: to.rem(62px);
     justify-content: start;
     align-items: center;
   }
@@ -320,14 +315,14 @@ body {
   .header__evaluation {
     display: flex;
     flex-direction: column;
-    margin-top: 6px;
-    margin-left: 38px;
+    margin-top: to.rem(6px);
+    margin-left: to.rem(38px);
     position: relative;
     &::after {
       content: "";
       background: url("../images/section-01/stars.svg");
-      width: 185px;
-      height: 36px;
+      width: to.rem(185px);
+      height: to.rem(36px);
       display: block;
       position: absolute;
       top: 50%;
@@ -337,13 +332,13 @@ body {
   }
 
   .header__digits {
-    margin-bottom: 4px;
-    letter-spacing: 0.3px;
+    margin-bottom: to.rem(4px);
+    letter-spacing: to.rem(0.3px);
   }
   .header__rating {
     order: 3;
-    letter-spacing: 0.5px;
-    margin: -10px 0px 0px -1px;
+    letter-spacing: to.rem(0.5px);
+    margin: to.rem(-10px 0px 0px -1px);
   }
 }
 
@@ -357,29 +352,29 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-top: 130px;
-    padding-bottom: 129px;
+    padding-top: to.rem(130px);
+    padding-bottom: to.rem(129px);
   }
 
   &__header {
   }
 
   &__title {
-    letter-spacing: 1px;
-    padding-left: 10px;
-    margin-top: -1px;
+    letter-spacing: to.rem(1px);
+    padding-left: to.rem(10px);
+    margin-top: to.rem(-1px);
   }
 
   &__heading {
-    margin-top: -32px;
-    letter-spacing: -5.45px;
+    margin-top: to.rem(-32px);
+    letter-spacing: to.rem(-5.45px);
   }
 
   &__grid {
     display: grid;
     grid-template: repeat(2, auto) / repeat(4, 1fr);
-    gap: 8px;
-    padding-top: 65px;
+    gap: to.rem(8px);
+    padding-top: to.rem(65px);
   }
 
   // ------------- OFFER Box#1 --------------
@@ -389,8 +384,8 @@ body {
     &::after {
       content: "";
       background: url("../images/section-02/2-1.svg");
-      width: 45px;
-      height: 49px;
+      width: to.rem(45px);
+      height: to.rem(49px);
       @include cols-after();
     }
 
@@ -399,8 +394,8 @@ body {
       &::after {
         content: "";
         background: url("../images/section-02/2-1w.svg");
-        width: 45px;
-        height: 49px;
+        width: to.rem(45px);
+        height: to.rem(49px);
         @include cols-after();
       }
     }
@@ -412,8 +407,8 @@ body {
     &::after {
       content: "";
       background: url("../images/section-02/2-2.svg");
-      width: 43px;
-      height: 43px;
+      width: to.rem(43px);
+      height: to.rem(43px);
       @include cols-after();
     }
 
@@ -422,8 +417,8 @@ body {
       &::after {
         content: "";
         background: url("../images/section-02/2-2w.svg");
-        width: 43px;
-        height: 43px;
+        width: to.rem(43px);
+        height: to.rem(43px);
         @include cols-after();
       }
     }
@@ -436,8 +431,8 @@ body {
     &::after {
       content: "";
       background: url("../images/section-02/2-3.svg");
-      width: 47px;
-      height: 46px;
+      width: to.rem(47px);
+      height: to.rem(46px);
       @include cols-after();
     }
 
@@ -446,8 +441,8 @@ body {
       &::after {
         content: "";
         background: url("../images/section-02/2-3w.svg");
-        width: 47px;
-        height: 46px;
+        width: to.rem(47px);
+        height: to.rem(46px);
         @include cols-after();
       }
     }
@@ -455,13 +450,13 @@ body {
   // ------------- OFFER Box#4 --------------
   &__col-4 {
     @include cols();
-    padding-bottom: 60px;
+    padding-bottom: to.rem(60px);
 
     &::after {
       content: "";
       background: url("../images/section-02/2-4.svg");
-      width: 33px;
-      height: 46px;
+      width: to.rem(33px);
+      height: to.rem(46px);
       @include cols-after();
     }
 
@@ -470,8 +465,8 @@ body {
       &::after {
         content: "";
         background: url("../images/section-02/2-4w.svg");
-        width: 33px;
-        height: 46px;
+        width: to.rem(33px);
+        height: to.rem(46px);
         @include cols-after();
       }
     }
@@ -483,8 +478,8 @@ body {
     &::after {
       content: "";
       background: url("../images/section-02/2-5.svg");
-      width: 55px;
-      height: 39px;
+      width: to.rem(55px);
+      height: to.rem(39px);
       @include cols-after();
     }
 
@@ -493,8 +488,8 @@ body {
       &::after {
         content: "";
         background: url("../images/section-02/2-5w.svg");
-        width: 55px;
-        height: 39px;
+        width: to.rem(55px);
+        height: to.rem(39px);
         @include cols-after();
       }
     }
@@ -506,8 +501,8 @@ body {
     &::after {
       content: "";
       background: url("../images/section-02/2-6.svg");
-      width: 45px;
-      height: 39px;
+      width: to.rem(45px);
+      height: to.rem(39p) x;
       @include cols-after();
     }
 
@@ -516,8 +511,8 @@ body {
       &::after {
         content: "";
         background: url("../images/section-02/2-6w.svg");
-        width: 45px;
-        height: 39px;
+        width: to.rem(45px);
+        height: to.rem(39px);
         @include cols-after();
       }
     }
@@ -529,8 +524,8 @@ body {
     &::after {
       content: "";
       background: url("../images/section-02/2-7.svg");
-      width: 37px;
-      height: 47px;
+      width: to.rem(37px);
+      height: to.rem(47px);
       @include cols-after();
     }
 
@@ -539,8 +534,8 @@ body {
       &::after {
         content: "";
         background: url("../images/section-02/2-7w.svg");
-        width: 37px;
-        height: 47px;
+        width: to.rem(37px);
+        height: to.rem(47px);
         @include cols-after();
       }
     }
@@ -552,8 +547,8 @@ body {
     &::after {
       content: "";
       background: url("../images/section-02/2-8.svg");
-      width: 47px;
-      height: 47px;
+      width: to.rem(47px);
+      height: to.rem(47px);
       @include cols-after();
     }
 
@@ -562,8 +557,8 @@ body {
       &::after {
         content: "";
         background: url("../images/section-02/2-8w.svg");
-        width: 47px;
-        height: 47px;
+        width: to.rem(47px);
+        height: to.rem(47px);
         @include cols-after();
       }
     }
@@ -575,13 +570,13 @@ body {
 
   &__more {
     align-self: end;
-    margin-top: 32px;
-    margin: 33px -7px 0px 0px;
+    margin-top: to.rem(32px);
+    margin: to.rem(33px -7px 0px 0px);
     white-space: nowrap;
     position: relative;
 
     span {
-      margin-right: 8px;
+      margin-right: to.rem(8px);
     }
 
     &:hover {
@@ -600,7 +595,7 @@ body {
 /*! =================== SECTION HELP ================== */
 
 .help {
-  padding: 133px 0 135px 0;
+  padding: to.rem(133px 0 135px 0);
 
   &__inner {
     display: grid;
@@ -609,51 +604,51 @@ body {
 
   &__left-side {
     .heading02 {
-      letter-spacing: -5.5px;
+      letter-spacing: to.rem(-5.5px);
     }
 
     .body02 {
-      letter-spacing: -0.1px;
+      letter-spacing: to.rem(-0.1px);
     }
 
     p {
-      padding-top: 18px;
+      padding-top: to.rem(18px);
     }
   }
 
   &__button {
-    margin-top: 32px;
+    margin-top: to.rem(32px);
   }
 
   &__right-side {
-    padding: 16px 0px 0px 110px;
+    padding: to.rem(16px 0px 0px 110px);
     position: relative;
 
     &::before {
       content: "";
       background: url("../images/section-03/Group\ 9128.svg");
       display: block;
-      width: 72px;
-      height: 434px;
+      width: to.rem(72px);
+      height: to.rem(434px);
       position: absolute;
       top: 0;
       left: 2.5%;
     }
 
     li:not(:first-child) {
-      padding-top: 30px;
+      padding-top: to.rem(30px);
     }
 
     p {
-      padding-top: 8px;
-      padding-right: 200px;
+      padding-top: to.rem(8px);
+      padding-right: to.rem(200px);
     }
 
     .title01 {
-      letter-spacing: -0.8px;
+      letter-spacing: to.rem(-0.8px);
     }
     .body01 {
-      letter-spacing: -0.1px;
+      letter-spacing: to.rem(-0.1px);
     }
   }
 }
@@ -662,36 +657,36 @@ body {
 /*! =================== SECTION QUERY ================== */
 
 .query {
-  margin-bottom: 50px;
+  margin-bottom: to.rem(50px);
   &__inner {
   }
 
   &__grid {
     display: grid;
     grid-template-columns: 16.73% 37.32% 45.95%;
-    column-gap: 0px;
-    margin-right: -15px;
+    column-gap: to.rem(0px);
+    margin-right: to.rem(-15px);
   }
 
   img {
-    max-height: 502px;
+    max-height: to.rem(502px);
   }
 
   .middle {
     background-color: #ff6433;
-    margin-left: -6px;
-    padding-top: 130px;
+    margin-left: to.rem(-6px);
+    padding-top: to.rem(130px);
   }
 
   &__heading {
-    margin-left: 80px;
-    letter-spacing: -1px;
-    padding-right: 30px;
+    margin-left: to.rem(80px);
+    letter-spacing: to.rem(-1px);
+    padding-right: to.rem(30px);
   }
 
   &__button {
-    margin-top: 45px;
-    margin-left: 62px;
+    margin-top: to.rem(45px);
+    margin-left: to.rem(62p) x;
   }
 
   &__values {
@@ -700,8 +695,8 @@ body {
   }
 
   &__value {
-    margin-left: -6px;
-    margin-top: 50px;
+    margin-left: to.rem(-6px);
+    margin-top: to.rem(50px);
   }
 
   &__quantity {
@@ -710,11 +705,11 @@ body {
 
   .heading02 {
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: to.rem(1px);
   }
 
   .title02 {
-    letter-spacing: -0.5px;
+    letter-spacing: to.rem(-0.5px);
   }
 }
 
@@ -723,8 +718,8 @@ body {
 
 .brands {
   background-color: #e2e6e9;
-  padding-top: 124px;
-  padding-bottom: 80px;
+  padding-top: to.rem(124px);
+  padding-bottom: to.rem(80px);
   // padding-bottom: 100px;
 
   &__heading {
@@ -736,14 +731,14 @@ body {
   &__logos-ul {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(5, 1fr);
-    margin-top: 35px;
-    gap: 40px 40px;
+    margin-top: to.rem(35px);
+    gap: to.rem(40px 40px);
   }
 
   // .brands__logo
 
   &__logo {
-    height: 127.88px;
+    height: to.rem(127.88px);
     align-self: center;
     display: flex;
     align-items: center;
@@ -755,21 +750,21 @@ body {
 /*! =================== SECTION BLOG ================== */
 
 .blog {
-  padding: 125px 0 133px 0;
+  padding: to.rem(125px 0 133px 0);
 
   &__title {
-    letter-spacing: -5px;
-    margin-left: -3px;
-    margin-bottom: 55px;
+    letter-spacing: to.rem(-5px);
+    margin-left: to.rem(-3px);
+    margin-bottom: to.rem(55px);
   }
 
   &__filter-box {
-    margin-bottom: 50px;
+    margin-bottom: to.rem(50px);
   }
 
   &__filter-item {
     display: inline-flex;
-    margin-right: 30px;
+    margin-right: to.rem(30px);
 
     &:last-child {
       margin-right: 0;
@@ -779,23 +774,23 @@ body {
   &__filter-btn {
     background-color: transparent;
     color: #9a9ca5;
-    border: 1px solid #9a9ca5;
-    border-radius: 4px;
-    padding: 1px 8px;
+    border: to.rem(1px solid #9a9ca5);
+    border-radius: to.rem(4px);
+    padding: to.rem(1px 8px);
     white-space: nowrap;
 
     &--active {
       background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
       border: none;
       color: #fff;
-      padding: 2px 8px;
+      padding: to.rem(2px 8px);
     }
   }
 
   &__list {
     display: grid;
     grid-template: repeat(2, auto) / repeat(3, 1fr);
-    gap: 62px 30px;
+    gap: to.rem(62px 30px);
   }
 
   &__list-item {
@@ -803,7 +798,7 @@ body {
   }
 
   &__image-box {
-    margin-bottom: 25px;
+    margin-bottom: to.rem(25px);
   }
 
   .body02 {
@@ -811,12 +806,12 @@ body {
   }
 
   &__article-title {
-    margin: 16px 0;
-    letter-spacing: -1px;
+    margin: to.rem(16px 0);
+    letter-spacing: to.rem(-1px);
   }
 
   &__article-text {
-    letter-spacing: -0.2px;
+    letter-spacing: to.rem(-0.2px);
   }
 }
 
@@ -825,34 +820,34 @@ body {
 
 .customers {
   background-color: #f2f2f2;
-  padding: 128px 0px 145px 0px;
+  padding: to.rem(128px 0px 145px 0px);
 
   &__inner {
   }
 
   &__heading {
-    padding: 0px 160px;
+    padding: to.rem(0px 160px);
     text-align: center;
-    letter-spacing: -5px;
+    letter-spacing: to.rem(-5px);
   }
 
   &__slider-wrapper {
-    margin-top: 80px;
+    margin-top: to.rem(80px);
     position: relative;
   }
 
   &__slide {
     &:nth-child(2n + 1) {
       .customers__slide-inner {
-        margin-right: 30px;
-        padding: 70px 71px;
+        margin-right: to.rem(30px);
+        padding: to.rem(70px 71px);
       }
     }
 
     &:nth-child(2n) {
       .customers__slide-inner {
-        margin-left: 25px;
-        padding: 70px 71px;
+        margin-left: to.rem(25px);
+        padding: to.rem(70px 71px);
       }
     }
   }
@@ -866,32 +861,32 @@ body {
   }
 
   &__avatar img {
-    width: 65px;
-    height: 65px;
+    width: to.rem(65px);
+    height: to.rem(65px);
     border-radius: 50%;
   }
 
   &__info {
-    padding-left: 14px;
+    padding-left: to.rem(14px);
   }
 
   &__info-name {
-    padding-top: 2px;
-    letter-spacing: -1px;
+    padding-top: to.rem(2px);
+    letter-spacing: to.rem(-1px);
   }
 
   &__info-city {
   }
 
   &__quote {
-    margin-top: 22px;
-    letter-spacing: -1px;
+    margin-top: to.rem(22px);
+    letter-spacing: to.rem(-1px);
   }
 
   &__arrow {
     position: absolute;
     top: 110.5%;
-    margin-right: 12px;
+    margin-right: to.rem(12px);
     z-index: 5;
 
     path {
@@ -909,8 +904,8 @@ body {
       position: absolute;
       top: -50%;
       left: -50%;
-      height: 48px;
-      width: 48px;
+      height: to.rem(48px);
+      width: to.rem(48px);
       background-color: rgb(255, 255, 255);
       border-radius: 50%;
       transform: translate(50%, 50%);
@@ -923,8 +918,8 @@ body {
       position: absolute;
       top: -50%;
       left: -50%;
-      height: 48px;
-      width: 48px;
+      height: to.rem(48px);
+      width: to.rem(48px);
       background-color: black;
       border-radius: 50%;
       transform: translate(50%, 50%);
@@ -973,27 +968,27 @@ body {
   }
 
   &__dots {
-    margin-top: 31px;
+    margin-top: to.rem(31px);
 
     button {
       font-size: 0;
       background-color: transparent;
-      width: 32px;
-      height: 32px;
+      width: to.rem(32px);
+      height: to.rem(32px);
       display: flex;
       align-items: center;
 
       &::before {
         content: "";
-        height: 4px;
-        width: 100px;
+        height: to.rem(4px);
+        width: to.rem(100px);
         background-color: rgba(147, 145, 145, 1);
-        border-radius: 4px;
+        border-radius: to.rem(4px);
       }
     }
 
     li {
-      margin-right: 12px;
+      margin-right: to.rem(12px);
 
       &:last-child {
         margin-right: 0px;
@@ -1019,3 +1014,83 @@ body {
 
 /*! =================== SECTION FAQ ================== */
 /*! =================== SECTION FAQ ================== */
+
+.faq {
+  background-color: rgba(226, 230, 233, 1);
+  padding-bottom: to.rem(128px);
+
+  &__heading {
+    padding-top: to.rem(128px);
+    text-align: center;
+    letter-spacing: to.rem(-5px);
+  }
+
+  &__accordeon {
+    margin-top: to.rem(88px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__accordeon-item {
+    background-color: white;
+    width: to.rem(896px);
+    height: auto;
+    padding: to.rem(0px 42px);
+    margin-bottom: to.rem(12px);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__accordeon-link {
+    &--active .faq__accordeon-head::after {
+      transform: rotate(0deg);
+    }
+  }
+
+  &__accordeon-head {
+    margin: to.rem(38px 0);
+    position: relative;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 1.5%;
+      transform: translateY(-50%);
+      width: to.rem(18px);
+      height: to.rem(2px);
+      background-color: rgb(255, 255, 255);
+      border-radius: to.rem(2px);
+      z-index: 5;
+    }
+
+    &::after {
+      transform: rotate(90deg);
+      transition: all 0.3s;
+    }
+
+    span::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -0.3%;
+      transform: translateY(-50%);
+      width: to.rem(51.08px);
+      height: to.rem(48px);
+      background-color: #ff3f3a;
+    }
+  }
+
+  &__accordeon-text {
+    color: rgba(147, 145, 145, 1);
+    margin-bottom: to.rem(38px);
+    margin-top: to.rem(-22px);
+    padding-right: to.rem(90px);
+  }
+}
+
+/*! ================ SECTION CONTACT =============== */
+/*! ================ SECTION CONTACT =============== */
