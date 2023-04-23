@@ -1,13 +1,14 @@
 // ---------- Mixins for General ----------
 @mixin button01 {
   display: inline-block;
-  width: 201px;
+  width: 203px;
   height: 62px;
   font-size: 18px;
   letter-spacing: -0.4px;
   line-height: 1.75;
   font-weight: 600;
-  padding: 17px 0 0 40px;
+  padding-top: 17px;
+  text-align: center;
   color: #ffffff;
   background: #ff6433;
   border-radius: 12px;
@@ -27,7 +28,8 @@
   letter-spacing: -0.4px;
   line-height: 1.75;
   font-weight: 600;
-  padding: 17px 0 0 40px;
+  padding-top: 17px;
+  text-align: center;
   color: #ffffff;
   background: #ff6433;
   border-radius: 12px;
@@ -47,7 +49,9 @@
   letter-spacing: -0.4px;
   line-height: 1.75;
   font-weight: 600;
-  padding: 17px 0 0 40px;
+  padding-top: 17px;
+  margin-left: 60px;
+  text-align: center;
   color: #ffffff;
   background: #1e1b1b;
   border-radius: 12px;
