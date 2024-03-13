@@ -24,6 +24,16 @@ $(function () {
     dots: true,
     appendDots: $(".customers__dots"),
     waitForAnimate: false,
+    responsive: [
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 1,
+          draggable: true,
+        },
+      },
+    ],
+
   });
   $(".customers__prev").on("click", function (e) {
     e.preventDefault();
