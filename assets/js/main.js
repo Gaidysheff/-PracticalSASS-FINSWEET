@@ -33,7 +33,6 @@ $(function () {
         },
       },
     ],
-
   });
   $(".customers__prev").on("click", function (e) {
     e.preventDefault();
@@ -64,5 +63,37 @@ $(function () {
       $(this).addClass("faq__accordeon-link--active");
       $(this).children(".faq__accordeon-text").slideDown();
     }
+  });
+  // --------------Сопровождение бургером скроллинга-----------------
+
+  setInterval(() => {
+    if (
+      $(window).scrollTop() > 0 &&
+      $(".header__top").hasClass("header__top--open") === false
+    ) {
+      $(".burger").addClass("burger--follow");
+    } else {
+      $(".burger").removeClass("burger--follow");
+    }
+  }, 0);
+  // ------------ Выкат/Закат Бургера и Overlay---------------------
+
+  $(".burger, .overlay, .header__top a").on("click", function (e) {
+    e.preventDefault();
+    $(".header__top").toggleClass("header__top--open");
+    $(".overlay").toggleClass("overlay--show");
+  });
+
+  // ----------------------- Плавный скроллинг --------------------------------
+
+  $(".header__nav-list a").on("click", function (e) {
+    //отменяем стандартную обработку нажатия по ссылке
+    e.preventDefault();
+    //забираем идентификатор блока с атрибута href
+    var id = $(this).attr("href"),
+      //узнаем высоту от начала страницы до блока на который ссылается якорь
+      top = $(id).offset().top - 20;
+    //анимируем переход на расстояние - top за 800 мс
+    $("body,html").animate({ scrollTop: top }, 800);
   });
 });
